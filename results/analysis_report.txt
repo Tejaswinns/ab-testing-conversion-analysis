@@ -1,0 +1,7 @@
+A/B Testing Conversion Analysis
+-----------------------------
+Control Conversion Rate: 0.12039917935897611
+Treatment Conversion Rate: 0.11891957956489856
+Conversion Uplift: -0.0014795997940775518
+P-value: 0.2161174856249083
+Model Accuracy: 0.8812822602553654
