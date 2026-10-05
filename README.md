@@ -16,13 +16,14 @@ between the control and treatment groups.
 
 ## Analytical Workflow
 1. Load and inspect the dataset
-2. Check data quality
-3. Calculate conversion rates
-4. Compare control and treatment groups
+2. Check data quality and group distributions
+3. Calculate control and treatment conversion rates
+4. Measure conversion uplift
 5. Perform hypothesis testing
-6. Calculate conversion uplift
-7. Visualize conversion rates
-8. Evaluate the results
+6. Visualize conversion-rate differences
+7. Build and evaluate the logistic regression model
+8. Interpret the results and draw conclusions
+   
 ## Dataset
 - **Total Users:** 290,584
 - **Control Group:** 145,232 users
