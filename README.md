@@ -3,6 +3,26 @@
 ## Overview
 This project performs a comprehensive A/B testing analysis on conversion data, comparing the performance of a control group (old page) versus a treatment group (new page).
 
+## Business Question
+Does changing the webpage from the control version to the treatment
+version lead to a meaningful difference in user conversion?
+
+## Hypotheses
+**H0:** There is no significant difference in conversion rates
+between the control and treatment groups.
+
+**H1:** There is a significant difference in conversion rates
+between the control and treatment groups.
+
+## Analytical Workflow
+1. Load and inspect the dataset
+2. Check data quality
+3. Calculate conversion rates
+4. Compare control and treatment groups
+5. Perform hypothesis testing
+6. Calculate conversion uplift
+7. Visualize conversion rates
+8. Evaluate the results
 ## Dataset
 - **Total Users:** 290,584
 - **Control Group:** 145,232 users
