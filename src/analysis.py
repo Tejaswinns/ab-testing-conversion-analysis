@@ -2,6 +2,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from scipy.stats import ttest_ind
+from statsmodels.stats.proportion import proportions_ztest
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
@@ -76,7 +77,8 @@ with open(BASE_DIR / "results" / "analysis_report.txt", "w") as f:
     f.write(f"Control Conversion Rate: {control_rate}\n")
     f.write(f"Treatment Conversion Rate: {treatment_rate}\n")
     f.write(f"Conversion Uplift: {uplift}\n")
-    f.write(f"P-value: {p_value}\n")
+    f.write(f"T-test P-value: {p_value}\n")
+    f.write(f"Two-Proportion Z-Test P-value: {z_p_value}\n")
     f.write(f"Model Accuracy: {accuracy}\n")
 
 print("\nReport saved to results/analysis_report.txt")
