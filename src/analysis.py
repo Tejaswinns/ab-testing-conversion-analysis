@@ -34,6 +34,25 @@ t_stat, p_value = ttest_ind(control["converted"], treatment["converted"])
 
 print("\nT-statistic:", t_stat)
 print("P-value:", p_value)
+# Two-proportion z-test
+conversion_counts = [
+    control["converted"].sum(),
+    treatment["converted"].sum()
+]
+
+group_sizes = [
+    len(control),
+    len(treatment)
+]
+
+z_stat, z_p_value = proportions_ztest(
+    conversion_counts,
+    group_sizes
+)
+
+print("\nTwo-Proportion Z-Test")
+print("Z-statistic:", z_stat)
+print("P-value:", z_p_value)
 
 # Uplift calculation
 uplift = treatment_rate - control_rate
